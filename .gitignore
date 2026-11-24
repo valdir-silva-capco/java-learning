@@ -1,0 +1,21 @@
+# Compilação Java
+*.class
+
+# Logs
+*.log
+
+# Maven
+target/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
