@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person("Valdir Silva", 45);
+        Person person1 = new Person("Valdir Silva", 45);
+        Person person2 = new Person("Maria Santos");
 
-        System.out.println(person.getName());
-        System.out.println(person.getAge());
-
-        person.setAge(46);
-        System.out.println(person.getAge());
+        System.out.println(person1.getName());
+        System.out.println(person1.getAge());
+        System.out.println(person2.getName());
+        System.out.println(person2.getAge());
     }    
 }
