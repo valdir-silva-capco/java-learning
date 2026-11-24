@@ -4,5 +4,8 @@ public class Main {
 
         System.out.println(person.getName());
         System.out.println(person.getAge());
+
+        person.setAge(46);
+        System.out.println(person.getAge());
     }    
 }
