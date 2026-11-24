@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.Optional;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,5 +35,19 @@ public class Main {
         personBox.setValue(new Person("David", 40));
         Person personFromBox = personBox.getValue();
         System.out.println("Person from box: " + personFromBox.getName());
+   
+        Optional<String> optionalName = Optional.of("Optional Valdir");
+        System.out.println(optionalName.get());
+
+        Optional<String> emptyOptional = Optional.empty();
+        System.out.println(emptyOptional.isPresent());
+        if(emptyOptional.isPresent()) {
+            System.out.println(emptyOptional.get());
+        }
+        System.out.println(emptyOptional.orElse("Default Value"));
+
+        Person person = new Person("Eve", 28);
+        Optional<Person> personOptional = Optional.of(person);
+        System.out.println("Person from optional: " + personOptional.get().getName());
     }    
 }
