@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements Presentable{
     private String name;
     private int age;
 
@@ -22,5 +22,9 @@ public class Person {
             return;
         }
         this.age = age;
+    }
+    @Override
+    public void introduce() {
+        System.out.println("Hello, my name is " + name + " and I am " + age + " years old.");
     }
 }
